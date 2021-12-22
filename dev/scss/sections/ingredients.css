@@ -1,0 +1,31 @@
+#ingredients{
+    // border: 1px solid red;
+
+    >div{
+        // border: 1px solid red;
+
+        display: grid;
+        gap: 16px
+
+        @include md{
+            grid-template-columns: 30ww auto;
+            grid-template-areas: "ingredients-l ingredients-r";
+        }
+
+        @include lg{
+            grid-template-columns: 30ww auto;
+            grid-template-areas: "ingredients-l ingredients-r";
+        }
+
+        }
+        section{
+            @include md{
+                grid-area: ingredients-r;
+            }
+            h1{
+
+            }
+            p}
+        }
+    }
+}
