@@ -432,7 +432,7 @@ html {
       Footer
   ============= */
   footer {
-    background-color: #D87337;
+    background-color: #fef0ff;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -461,13 +461,13 @@ html {
   }
   footer > div aside ul li a:link,
   footer > div aside ul li a:visited {
-    color: #fff;
+    color: rgb(0, 0, 0);
     transition: 0.25s;
   }
   footer > div aside ul li a:link:hover, footer > div aside ul li a:link:active,
   footer > div aside ul li a:visited:hover,
   footer > div aside ul li a:visited:active {
-    color: #000;
+    color: rgb(0, 0, 0);
   }
   @media (min-width: 1440px) {
     footer > div aside ul li a:link,
@@ -479,57 +479,41 @@ html {
   /* =============
       Hero
   ============= */
-  #hero {
-    background-image: url("/deploy/image/hero/hero_image.png");
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-  }
-  @media (min-width: 768px) {
-    #hero {
-      height: 70vh;
-    }
-  }
-  @media (min-width: 1024px) {
-    #hero {
-      height: 80vh;
-    }
+
   }
   #hero div h1 {
     font-weight: 300;
     font-size: 2.75rem;
+    padding: 40px 40px;
     color: #fff;
     text-align: center;
   }
   @media (min-width: 768px) {
     #hero div h1 {
       font-size: 3.75rem;
+      padding: 40px 40px;
     }
   }
   @media (min-width: 1024px) {
     #hero div h1 {
       padding-top: 10%;
       padding-left: 10%;
-      text-align: left;
+      text-align: center;
       font-size: 5rem;
     }
   }
   
   @media (min-width: 1440px) {
     #ingredients {
-      display: grid;
-      grid-template-columns: auto 1440px auto;
       grid-template-areas: ". ingredients .";
     }
   }
   #ingredients > div {
-    display: grid;
     gap: 24px;
   }
   @media (min-width: 768px) {
     #ingredients > div {
       grid-template-columns: 38vw auto;
-      grid-template-areas: "ingredients-l ingredients-r";
     }
   }
   @media (min-width: 1024px) {
@@ -547,8 +531,6 @@ html {
   }
   @media (min-width: 768px) {
     #ingredients > div section {
-      grid-area: ingredients-r;
-      display: flex;
       align-items: center;
     }
   }
@@ -562,7 +544,7 @@ html {
     font-size: 1.5625rem;
     line-height: 1.75rem;
     padding-bottom: 16px;
-    text-align: center;
+    text-align: left;
   }
   @media (min-width: 768px) {
     #ingredients > div section > div h1 {
@@ -599,92 +581,16 @@ html {
     }
   }
   
-  @media (min-width: 768px) {
-    #gallery {
-      display: grid;
-      grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". gallery .";
+  ul { 
+    list-style-type: none; 
+    margin: auto; 
+    padding: auto; 
+    display: flex; 
+    flex-flow: wrap-reverse;
     }
-  }
-  @media (min-width: 1440px) {
-    #gallery {
-      grid-template-columns: auto 1440px auto;
+    
+    li { 
+    border: 20px; 
+    margin: 5px; 
+    padding: 20px; 
     }
-  }
-  @media (min-width: 768px) {
-    #gallery > div {
-      grid-area: gallery;
-    }
-  }
-  #gallery > div ul {
-    display: grid;
-    gap: 24px;
-    grid-template-rows: repeat(3, 70vh);
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 70vh 35vh;
-      grid-template-areas: "g1 g1" "g2 g3";
-    }
-  }
-  @media (min-width: 1440px) {
-    #gallery > div ul {
-      grid-template-columns: 60% auto;
-      grid-template-rows: 35vh 35vh;
-      grid-template-areas: "g1 g2" "g1 g3";
-    }
-  }
-  #gallery > div ul li {
-    background-size: cover;
-    background-position: center;
-  }
-  #gallery > div ul #gallery-1 {
-    background-image: url("/deploy/image/gallery/gallery-1.png")
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul #gallery-1 {
-      background-position: bottom;
-      grid-area: g1;
-    }
-  }
-  #gallery > div ul #gallery-2 {
-    background-image: url("/deploy/image/gallery/gallery-2.png");
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul #gallery-2 {
-      grid-area: g2;
-    }
-  }
-  #gallery > div ul #gallery-3 {
-    background-image: url("/deploy/image/gallery/gallery-3.png");
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul #gallery-3 {
-      grid-area: g3;
-    }
-  }
-  #gallery > div ul #gallery-4 {
-    background-image: url("/deploy/image/gallery/gallery-4.png");
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul #gallery-4 {
-      grid-area: g3;
-    }
-  }
-  #gallery > div ul #gallery-5 {
-    background-image: url("/deploy/image/gallery/gallery-5.png");
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul #gallery-5 {
-      grid-area: g3;
-    }
-  }
-  #gallery > div ul #gallery-6 {
-    background-image: url("/deploy/image/gallery/gallery-6.png");
-  }
-  @media (min-width: 768px) {
-    #gallery > div ul #gallery-6 {
-      grid-area: g3;
-    }
-  }
